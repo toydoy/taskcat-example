@@ -163,7 +163,7 @@ Resources:
       Source:
         Type: GITHUB
         Location: !Sub https://github.com/${GitHubUser}/${GitHubRepo}.git
-        BuildSpec: buildspec-cleanup.yml
+        BuildSpec: buildspec.yml
       TimeoutInMinutes: 10
   CodeBuildTaskCatTest:
     Type: AWS::CodeBuild::Project
